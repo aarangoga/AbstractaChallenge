@@ -1,0 +1,4 @@
+#1. The website has some challenge on the locators side which means that we need to take care of them
+#2. Time out is something that we will need to care in our test in order to avoid any failure
+#3. I didn't do any specific design pattern on this test since it's pretty straight forward but it can be done as POM.
+#4. Placing an order is possible and there weren't bugs that they don't allow to do this process.
