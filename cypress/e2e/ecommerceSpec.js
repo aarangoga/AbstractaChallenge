@@ -19,9 +19,6 @@ describe('E2E Test - Purchase Flow', () => {
 
     // Click on Checkout button
     cy.contains('Checkout').click({ force: true });
-
-    // Wait for the new page to fully load before proceeding
-    //cy.wait('@checkoutLoaded');
     
     // Guest Checkout - Fill in billing details
     cy.contains('Guest Checkout').click({ force: true });
@@ -30,24 +27,12 @@ describe('E2E Test - Purchase Flow', () => {
     // Continue to the next step
     cy.get('#button-guest').click({force: true});
 
-    // Wait for the new page to fully load before proceeding
-//    cy.wait('@shippingLoaded');
-
     // Delivery method and continue
-    //cy.get('[name="shipping_method"]').first().check();
-    //cy.get('[type="checkbox"]').check();
     cy.get('#button-shipping-method').click();
 
-    // Wait for the new page to fully load before proceeding
-    //cy.wait('@paymentLoaded');
-
     // Payment method and continue
-    //cy.get('[name="payment_method"]').first().check();
     cy.get('[name="agree"]').click();
     cy.get('#button-payment-method').click();
-
-    // Wait for the new page to fully load before proceeding
-    //cy.wait('@confirmLoaded');
 
     // Confirm order
     cy.get('#button-confirm').click();
