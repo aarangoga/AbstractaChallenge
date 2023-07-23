@@ -1,15 +1,15 @@
 {
-  "name": "Abstracta challenge",
+  "name": "abstractachallenge",
   "version": "1.0.0",
-  "description": "Just adding two products and placing the order",
-  "main": "index.js",
+  "description": "This repository contains an End-to-End (E2E) test suite for a web application's purchase flow. The test case described in this readme focuses on adding two products to the cart, completing the guest checkout process, and placing an order.",
+  "main": "cypress.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Alexander Arango Garces",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chalk": "^5.3.0",
     "cypress": "^12.17.2"
   }
 }
